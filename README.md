@@ -1,63 +1,60 @@
-# Cloud-Based Real-Time Price Prediction for E-Commerce
+Real-Time Price Prediction for E-Commerce
+📌 Overview
 
-## 📌 Project Overview
-This project implements an end-to-end real-time price prediction pipeline for an e-commerce use case.  
-It uses **Apache Kafka** for streaming data, **Machine Learning** for price prediction, **Snowflake** as a cloud data warehouse, and **Power BI** for visualization.
+An end-to-end cloud-based real-time price prediction system built using Apache Kafka, Machine Learning, Snowflake, and Power BI.
+The project simulates live e-commerce order data, predicts prices in real time, stores results in a cloud data warehouse, and visualizes trends.
 
----
+🚀 Key Highlights
 
-## 🏗️ System Architecture
+Real-time data streaming using Apache Kafka
+
+Machine Learning–based price prediction
+
+Cloud data storage using Snowflake
+
+Business insights using Power BI dashboards
+
+Complete industry-style data pipeline
+
+🏗️ Architecture
+
 Kafka Producer → ML Prediction Engine → Snowflake → Power BI
 
----
+🧰 Tech Stack
 
-## 🧰 Tech Stack
-- **Programming Language:** Python  
-- **Streaming:** Apache Kafka  
-- **Machine Learning:** Scikit-learn  
-- **Cloud Data Warehouse:** Snowflake  
-- **Visualization:** Power BI  
+Python
 
----
+Apache Kafka
 
-## 🔄 Project Workflow
+Scikit-learn
 
-### 1️⃣ Kafka Producer
-- Simulates real-time order data
-- Publishes quantity and customer information to Kafka topics
+Snowflake
 
-### 2️⃣ Machine Learning Prediction
-- Consumes streaming data from Kafka
-- Uses a trained ML model to predict product prices
-- Prepares prediction results for storage
+Power BI
 
-### 3️⃣ Snowflake Integration
-- Prediction results are loaded into **Snowflake**
-- SQL scripts create database, schema, tables, and stages
-- Data is queried directly from Snowflake
+🔄 Workflow
 
-### 4️⃣ Power BI Dashboard
-- Power BI connects to Snowflake
-- Visualizes predicted prices and trends over time
+Kafka Producer generates live order data
 
----
+ML engine predicts prices using trained model
 
-## 🗄️ Snowflake Usage
-Snowflake is used as the cloud data warehouse for storing prediction results.
+Predictions stored in Snowflake
 
-Key features used:
-- Database and schema creation
-- Staging files
-- `COPY INTO` command for data loading
+Power BI visualizes trends by month and year
 
-## ▶️ How to Run the Project
-
-### Prerequisites
-- Python 3.8+
-- Apache Kafka running locally
-- Snowflake account
-- SnowSQL (optional)
-- Power BI Desktop
+▶️ How to Run
+pip install -r requirements.txt
+python producer.py
+python predict.py
 
 
+Snowflake SQL scripts are provided to create tables and load data.
 
+🎯 Use Case
+
+This project demonstrates real-time analytics, ML deployment, and cloud data warehousing, aligned with Data Engineer / ML Engineer roles.
+
+👩‍💻 Author
+
+Vasudha Tulla
+B.Tech CSE (AI & ML)
