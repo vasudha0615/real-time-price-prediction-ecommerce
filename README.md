@@ -1,60 +1,70 @@
-Real-Time Price Prediction for E-Commerce
-📌 Overview
+# Real-Time Price Prediction for E-Commerce
 
-An end-to-end cloud-based real-time price prediction system built using Apache Kafka, Machine Learning, Snowflake, and Power BI.
-The project simulates live e-commerce order data, predicts prices in real time, stores results in a cloud data warehouse, and visualizes trends.
+## 📌 Overview
+This project demonstrates an end-to-end real-time price prediction system for an e-commerce use case.  
+It streams live order data using Apache Kafka, predicts prices using Machine Learning, stores results in Snowflake, and visualizes insights using Power BI.
 
-🚀 Key Highlights
+---
 
-Real-time data streaming using Apache Kafka
+## 🚀 Key Highlights
+- Real-time data streaming with Apache Kafka  
+- Machine Learning–based price prediction  
+- Cloud data warehousing using Snowflake  
+- Interactive dashboards using Power BI  
+- Complete industry-style data pipeline  
 
-Machine Learning–based price prediction
+---
 
-Cloud data storage using Snowflake
-
-Business insights using Power BI dashboards
-
-Complete industry-style data pipeline
-
-🏗️ Architecture
-
+## 🏗️ System Architecture
 Kafka Producer → ML Prediction Engine → Snowflake → Power BI
 
-🧰 Tech Stack
+---
 
-Python
+## 🧰 Tech Stack
+- Python  
+- Apache Kafka  
+- Scikit-learn  
+- Snowflake  
+- Power BI  
 
-Apache Kafka
+---
 
-Scikit-learn
+## 🔄 Project Workflow
+1. Kafka Producer simulates live e-commerce order data  
+2. ML Prediction Engine processes streaming data and predicts prices  
+3. Prediction results are stored in Snowflake  
+4. Power BI visualizes monthly and yearly price trends  
 
-Snowflake
+---
 
-Power BI
+## ▶️ How to Run the Project
 
-🔄 Workflow
-
-Kafka Producer generates live order data
-
-ML engine predicts prices using trained model
-
-Predictions stored in Snowflake
-
-Power BI visualizes trends by month and year
-
-▶️ How to Run
+### Install Dependencies
 pip install -r requirements.txt
+
+### Start Kafka
+zookeeper-server-start.bat config/zookeeper.properties  
+kafka-server-start.bat config/server.properties  
+
+### Run Kafka Producer
 python producer.py
+
+### Run ML Prediction Consumer
 python predict.py
 
+---
 
-Snowflake SQL scripts are provided to create tables and load data.
+## 🗄️ Snowflake
+Snowflake is used to store prediction results in a cloud data warehouse.  
+SQL scripts are included to create databases, tables, and load data using COPY INTO.
 
-🎯 Use Case
+---
 
-This project demonstrates real-time analytics, ML deployment, and cloud data warehousing, aligned with Data Engineer / ML Engineer roles.
+## 🎯 Use Case
+This project showcases real-time analytics, machine learning integration, and cloud data engineering skills relevant to Data Engineer and AI/ML Engineer roles.
 
-👩‍💻 Author
+---
 
-Vasudha Tulla
+## 👩‍💻 Author
+Vasudha Tulla  
 B.Tech CSE (AI & ML)
